@@ -1,1 +1,352 @@
-/* место для вашего кода */
+/* сброс стандартных отступов браузера */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* шрифт для  страницы */
+body {
+    font-family:"Raleway", Arial, sans-serif;
+}
+
+/* Шапка */
+/* Делю шапку на три колонки через grid */
+.header {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    align-items: center;
+    padding: 92px 50px 96px 50px;
+    
+}
+/* меню прижимаю к левому краю */
+.header_menu {
+  justify-self: start;
+}
+/* пункты меню в строку через flex */
+.header_links-list {
+    list-style: none;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-size: 18px;
+    line-height: 100%;
+}
+/* кружки */
+.header_links-item_bullet {
+    width: 6px; 
+    height: 6px;
+    border: 0.5px solid #000;
+    border-radius: 50%;
+}
+.header_link {
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000;     
+}
+.header_link_active {
+  text-decoration: underline;
+}
+/* контакты справа */
+.header_address { 
+   font-style: normal;
+   justify-self: end;
+   width: 240px;
+   font-size: 18px;
+   line-height: 135%;
+}
+.header_address-link {
+    display: block;
+    color: #000;
+    text-decoration: underline;
+}
+
+.header_address-text {
+  margin: 0;
+}
+
+.header_logo-image {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+/* Логотип по центру */
+.header_logo {
+    justify-self: center;
+}
+
+/* Обложка */
+.cover {
+    height: 757px;
+    padding: 165px 50px 0 50px; 
+    width: 1100px;
+    margin: 0 auto;
+    color: #fff;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),         /* Тут я затемнил картинку, так как она слишком яркая без градиента, по проекту она не такая яркая */
+        url("../images/cover.jpg");       
+    background-size: cover;
+    background-position: center;
+
+}
+/* большой заголовок */
+.cover_title {
+    font-size: 100px;            
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:0;
+}
+/* каждое слово на новой строке */
+.cover_title-word {
+    display: block;      
+}
+/* сдвигаю слова вправо, что бы получилась лесенка */
+.cover_title-word_one {
+    margin-left:0;
+}
+.cover_title-word_two {
+    margin-left: 330.5px;
+}
+.cover_title-word_three {
+    margin-left: 613px;
+}
+/* текст слева - кнопка справа */
+.cover_description {
+    width: 1000px;                    
+    height: 51px;
+    margin-top: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+   .cover_text {
+    font-size: 22px;                
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    width: 637px;
+    letter-spacing: 0;
+    word-spacing: 10px;
+   }
+/* Кнопка */
+.cover_button {
+    font-family: "Raleway", Arial, sans-serif;
+    cursor: pointer;
+    width: 256px;
+    height: 51px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ЛОТЫ */
+.lots {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 180px 24px 40px 24px;
+
+}
+.lots_title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 27px;
+    margin-left: 16px;
+}
+/* три карточки в ряд */
+.lots_list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin-bottom: 24px;
+
+
+}
+.lots_item {
+    width: 334px;
+    min-height: 596px;
+    flex-shrink: 0;
+}
+.lot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* картинка на фон */
+.lot_image {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Текст сверху картинки */
+.lot_content {
+    position: relative;
+    z-index: 2;                       /* Чтобы текст был на поверхности картинки */
+    padding: 40px;
+    height: 100%;
+    min-height: 596px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lot_heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 48px;
+ }
+ 
+.lot_text {
+    font-size: 20px;
+    color: #fff;
+    line-height: 120%;
+    margin-top: auto;
+}
+.lots_link {
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    display: block;
+    margin-left: 16px;
+
+    
+}
+
+/* "ОБ АУКЦИОНЕ",  после лотов  */
+.about {
+    width: 1052px;
+    margin: 0 auto;
+    margin-top: 181px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 72px;
+}
+           
+.about_logo-column {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;             /* Черный круг  */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.about_logo {
+    width: 148px;
+    height: 114px;
+    display: block;
+}
+.about_text-column {
+    width: 688px;
+    
+}
+.about_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 101px;
+    margin-bottom: 92px;
+}
+/* В столбик с отступом  */
+.about_description {
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+}
+
+.about_paragraph {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    
+}
+
+/* подвал сайта */
+.footer {
+    width: 1100px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer_contacts {
+    font-style: normal;
+    width: 265px;
+}
+.footer_link {
+    display: block;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer_text {
+    font-size: 18px;
+    line-height: 135%;
+    margin: 0;
+}
+/* Меню по центру */
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.footer_menu-link {
+    font-size: 18px;
+    line-height: 100%;
+    color: #000;
+    text-decoration: underline;
+}
+.footer_menu-link_active {
+    text-decoration: none;
+}
+/* иконки соц. сетей по порядку как в проекте */
+.footer_socials {
+    display: flex;
+    gap: 48px;
+}
+.footer_social {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.footer_social-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
