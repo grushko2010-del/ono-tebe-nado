@@ -8,17 +8,20 @@
 /* шрифт для  страницы */
 body {
     font-family:"Raleway", Arial, sans-serif;
+     max-width: 1100px;              
+    margin: 0 auto; 
 }
 
 /* Шапка */
 /* Делю шапку на три колонки через grid */
 .header {
     width: 1100px;
+    height: 293px; 
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
-    padding: 92px 50px 96px 50px;
+    padding: 95px 50px 93px;
     
 }
 /* меню прижимаю к левому краю */
@@ -29,10 +32,8 @@ body {
 .header_links-list {
     list-style: none;
     display: flex;
-    gap: 13px;
+    gap: 12px;
     align-items: center;
-    font-size: 18px;
-    line-height: 100%;
 }
 /* кружки */
 .header_links-item_bullet {
@@ -56,7 +57,7 @@ body {
    justify-self: end;
    width: 240px;
    font-size: 18px;
-   line-height: 135%;
+   line-height: 24.3px;
 }
 .header_address-link {
     display: block;
@@ -81,7 +82,7 @@ body {
 /* Обложка */
 .cover {
     height: 757px;
-    padding: 165px 50px 0 50px; 
+    padding: 165px 50px 0 50px;  
     width: 1100px;
     margin: 0 auto;
     color: #fff;
@@ -95,11 +96,12 @@ body {
 /* большой заголовок */
 .cover_title {
     font-size: 100px;            
-    line-height: 115%;
+    line-height: 115px;
     letter-spacing: 0.3em;
     font-weight: 700;
     text-transform: uppercase;
     margin:0;
+    width: 100%;
 }
 /* каждое слово на новой строке */
 .cover_title-word {
@@ -113,13 +115,13 @@ body {
     margin-left: 330.5px;
 }
 .cover_title-word_three {
-    margin-left: 613px;
+    margin-left: 613px; 
 }
 /* текст слева - кнопка справа */
 .cover_description {
     width: 1000px;                    
     height: 51px;
-    margin-top: 118px;
+    margin-top: 106px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,7 +134,7 @@ body {
     margin: 0;
     width: 637px;
     letter-spacing: 0;
-    word-spacing: 10px;
+    word-spacing: 0;
    }
 /* Кнопка */
 .cover_button {
@@ -156,10 +158,9 @@ body {
 
 /* ЛОТЫ */
 .lots {
-    width: 1100px;
+    width: 1052px;                   
     margin: 0 auto;
-    padding: 180px 24px 40px 24px;
-
+    padding-top: 180px;            
 }
 .lots_title {
     font-size: 40px;
@@ -167,7 +168,6 @@ body {
     text-transform: uppercase;
     line-height: 100%;
     margin-bottom: 27px;
-    margin-left: 16px;
 }
 /* три карточки в ряд */
 .lots_list {
@@ -229,16 +229,14 @@ body {
     color: #000;
     text-decoration: underline;
     display: block;
-    margin-left: 16px;
 
-    
 }
 
 /* "ОБ АУКЦИОНЕ",  после лотов  */
 .about {
     width: 1052px;
     margin: 0 auto;
-    margin-top: 181px;
+    margin-top: 120px; 
     padding: 0;
     display: flex;
     align-items: flex-start;
@@ -298,7 +296,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
 .footer_contacts {
