@@ -88,10 +88,9 @@ body {
     /* Тут я затемнил картинку, так как она слишком яркая без градиента, по проекту она не такая яркая */
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/cover.jpg");   
+    url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
-
 }
 /* большой заголовок */
 .cover_title {
@@ -127,7 +126,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-   .cover_text {
+.cover_text {
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
@@ -234,7 +233,7 @@ body {
 .about {
     width: 1052px;
     margin: 0 auto;
-    margin-top: 120px; 
+    margin-top: 120px;
     padding: 0;
     display: flex;
     align-items: flex-start;
@@ -258,7 +257,6 @@ body {
 }
 .about_text-column {
     width: 688px;
-    
 }
 .about_title {
     font-size: 40px;
@@ -272,7 +270,7 @@ body {
 /* В столбик с отступом  */
 .about_description {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 30px;
 }
 
