@@ -214,7 +214,6 @@ body {
     text-decoration: underline;
     margin-bottom: 48px;
  }
- 
 .lot_text {
     font-size: 20px;
     color: #fff;
@@ -243,7 +242,7 @@ body {
     width: 240px;
     height: 240px;
     background-color: #000;
-    /* Черный круг  */ 
+    /* Черный круг  */
     border-radius: 50%;
     display: flex;
     justify-content: center;
