@@ -173,7 +173,7 @@ body {
 }
 .lots_item {
     width: 334px;
-    min-height: 596px;
+    height: 596px;
     flex-shrink: 0;
 }
 .lot {
@@ -199,6 +199,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .lot_heading {
     font-size: 22px;
