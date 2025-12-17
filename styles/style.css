@@ -14,7 +14,6 @@ body {
 /* Делю шапку на три колонки через grid */
 .header {
     width: 1100px;
-    height: 293px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
@@ -77,8 +76,7 @@ body {
 }
 /* Обложка */
 .cover {
-    height: 757px;
-    padding: 165px 50px 0 50px;
+    padding: 165px 50px 50px;
     width: 1100px;
     margin: 0 auto;
     color: #fff;
@@ -179,7 +177,6 @@ body {
 .lot {
     position: relative;
     width: 100%;
-    height: 100%;
 }
 /* картинка на фон */
 .lot_image {
@@ -194,10 +191,8 @@ body {
 /* Текст сверху картинки */
 .lot_content {
     position: relative;
-    /* Чтобы текст был на поверхности картинки */
     z-index: 2;
     padding: 40px;
-    height: 100%;
     min-height: 596px;
     display: flex;
     flex-direction: column;
@@ -277,7 +272,6 @@ body {
 /* подвал сайта */
 .footer {
     width: 1100px;
-    height: 180px;
     margin: 0 auto;
     margin-top: 180px;
     padding: 0 50px;
