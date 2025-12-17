@@ -76,10 +76,11 @@ body {
 }
 /* Обложка */
 .cover {
-    padding: 165px 50px 50px;
     width: 1100px;
     margin: 0 auto;
+    padding: 165px 50px 50px;
     color: #fff;
+    min-height: 757px;
     /* Тут я затемнил картинку, так как она слишком яркая без градиента, по проекту она не такая яркая */
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -154,6 +155,7 @@ body {
     width: 1052px;
     margin: 0 auto;
     padding-top: 180px;
+    min-height: 723px;
 }
 .lots_title {
     font-size: 40px;
@@ -177,6 +179,7 @@ body {
 .lot {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 /* картинка на фон */
 .lot_image {
@@ -193,7 +196,7 @@ body {
     position: relative;
     z-index: 2;
     padding: 40px;
-    min-height: 596px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -227,6 +230,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 72px;
+    min-height: 595px;
 }
 .about_logo-column {
     width: 240px;
@@ -275,6 +279,7 @@ body {
     margin: 0 auto;
     margin-top: 180px;
     padding: 0 50px;
+    min-height: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
