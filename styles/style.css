@@ -235,8 +235,7 @@ body {
 .about_logo-column {
     width: 240px;
     height: 240px;
-    margin-top: 35px;
-    margin-left: 47px;
+    margin: 35px 0 0 47px;
     background-color: #000;
     /* Черный круг  */
     border-radius: 50%;
