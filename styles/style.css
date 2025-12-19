@@ -23,6 +23,8 @@ body {
 /* меню прижимаю к левому краю */
 .header_menu {
   justify-self: start;
+  position: relative;
+  left: -4px;
 }
 /* пункты меню в строку через flex */
 .header_links-list {
@@ -37,6 +39,7 @@ body {
     height: 6px;
     border: 0.5px solid #000;
     border-radius: 50%;
+    margin: 1px 2px;
 }
 .header_link {
     font-size: 18px;
@@ -54,6 +57,9 @@ body {
    width: 240px;
    font-size: 18px;
    line-height: 24.3px;
+   position: relative;
+   top: 0;
+   right: -3px;
 }
 .header_address-link {
     display: block;
@@ -301,25 +307,23 @@ body {
 /* подвал сайта */
 .footer {
     width: 1100px;
-    margin: 0 auto;
-    margin-top: 180px;
+    margin: 180px auto 0;
     padding: 0 50px 24px;
-    min-height: 180px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .footer_contacts {
-    font-style: normal;
     width: 265px;
-    position: relative;
-    top: -57px;
-    left: 0px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24.3px;
+    margin-top: 8px;
 }
 .footer_link {
     display: block;
     font-size: 18px;
-    line-height: 135%;
+    line-height: 100%;
     color: #000;
     text-decoration: underline;
 }
@@ -334,10 +338,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
-    position: relative;
-    top: -73px;
-    left: -12px;
+    gap: 16px;
 }
 .footer_menu-link {
     font-size: 18px;
@@ -354,12 +355,9 @@ body {
     gap: 48px;
 }
 .footer_social {
-    display: block;
+    display: flex;
     width: 48px;
-    height: 48px;
-    position: relative;
-    top: -81px;
-    left: 0px;
+    align-items: center;
 }
 .footer_social-icon {
     display: block;
