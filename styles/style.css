@@ -24,13 +24,13 @@ body {
 .header_menu {
   justify-self: start;
   position: relative;
-  left: -4px;
+  left: -3px;
 }
 /* пункты меню в строку через flex */
 .header_links-list {
     list-style: none;
     display: flex;
-    gap: 12px;
+    gap: 11px;
     align-items: center;
 }
 /* кружки */
@@ -49,22 +49,24 @@ body {
 }
 .header_link_active {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 /* контакты справа */
 .header_address {
    font-style: normal;
    justify-self: end;
+   white-space: nowrap;
    width: 240px;
    font-size: 18px;
    line-height: 24.3px;
    position: relative;
-   top: 0;
    right: -3px;
 }
 .header_address-link {
     display: block;
     color: #000;
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .header_address-text {
@@ -75,6 +77,8 @@ body {
     display: block;
     width: 148px;
     height: 105px;
+    position: relative;
+    top: 1px;
 }
 /* Логотип по центру */
 .header_logo {
@@ -183,6 +187,22 @@ body {
     margin-top: 5px;
     padding: 0;
 }
+.lots_item:nth-child(1) {
+    position: relative;
+    left: 0px;
+    top: -1px;
+}
+.lots_item:nth-child(2) {
+    position: relative;
+    left: 1px;
+    top: -1px;
+}
+.lots_item:nth-child(3) {
+    position: relative;
+    left: 2px;
+    top: -1px;
+}
+
 .lots_item {
     width: 334px;
     height: 596px;
@@ -232,6 +252,7 @@ body {
     font-size: 20px;
     color: #000;
     text-decoration: underline;
+    text-underline-offset: 5px;
     display: block;
     margin-top: 28px;
     margin-left: 40px;
@@ -319,6 +340,9 @@ body {
     font-size: 18px;
     line-height: 24.3px;
     margin-top: 8px;
+    position: relative;
+    top: -31px;
+    left: 1px;
 }
 .footer_link {
     display: block;
@@ -326,8 +350,14 @@ body {
     line-height: 100%;
     color: #000;
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
-
+.footer_link:first-child {
+  margin-bottom: 5px;
+}
+.footer_link:nth-child(2) {
+  margin-bottom: 3px;
+}
 .footer_text {
     font-size: 18px;
     line-height: 135%;
@@ -338,13 +368,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 0px;
+    position: relative;
+    top: -25px;
+    left: -12px;
 }
 .footer_menu-link {
     font-size: 18px;
     line-height: 100%;
     color: #000;
     text-decoration: underline;
+    margin-bottom: 3px;
+    text-underline-offset: 4px;
 }
 .footer_menu-link_active {
     text-decoration: none;
@@ -353,6 +388,9 @@ body {
 .footer_socials {
     display: flex;
     gap: 48px;
+    position: relative;
+    top: -27px;
+    right: 0px;
 }
 .footer_social {
     display: flex;
